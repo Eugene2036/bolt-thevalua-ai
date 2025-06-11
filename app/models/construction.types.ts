@@ -1,0 +1,181 @@
+export enum CalculatorKind {
+  Residential_SS_up_to_100m2 = 'Residential SS up to 100m2',
+  Residential_SS_101_200M2 = 'Residential SS 101-200M2',
+  Residential_SS_Above_201_M2 = 'Residential SS Above 201 M2',
+  Residential_DS_UP_TO_450M2 = 'Residential DS UP TO 450M2',
+  Residential_DS_ABOVE_450M2 = 'Residential DS ABOVE 450M2',
+  Residential_DS_Exclusive = 'Residential DS Exclusive',
+  Outbuilding = 'Outbuilding',
+  SHHA_House_Types = 'SHHA House Types',
+  Multi_res_SS_up_to_500m2 = 'Multi res SS up to 500m2',
+  Multi_res_SS_Above_501M2 = 'Multi res SS Above 501M2',
+  Multi_Res_DS_up_to_500m2 = 'Multi Res DS up to 500m2',
+  Multi_Res_DS_Above_500M2 = 'Multi Res DS Above 500M2',
+  Guest_House_Single_Storey = 'Guest House Single Storey',
+  Hotels_Single_Storey = 'Hotels Single Storey',
+  Hotel_DS = 'Hotel DS',
+  Warehouses = 'Warehouses',
+  Warehouse_with_mezzanine = 'Warehouse with mezzanine',
+  Schools = 'Schools',
+  Filling_Stations = 'Filling Stations',
+  Office_single_storey = 'Office single storey',
+  Office_DS = 'Office DS',
+  Shopping_Mall = 'Shopping Mall',
+  Boundary_Wall = 'Boundary Wall',
+  External_Works_Residential = 'External Works Residential',
+  External_Works_Commercial = 'External Works Commercial',
+}
+export enum YearRange {
+  First = '2010-2013',
+  Second = '2014-2021',
+  Third = '2021-2023',
+}
+export enum QualityOfFinish {
+  Delapidated = 'Delapidated',
+  Poor = 'Poor',
+  Fair = 'Fair',
+  Good = 'Good',
+  VeryGood = 'Very Good',
+  Excellent = 'Excellent',
+  NotApplicable = 'Not Applicable',
+}
+export enum MiniKnownElement {
+  Boundary_Wall = 'Boundary Wall',
+  ElectricFence = 'Electric Fence',
+  Gate = 'Gate',
+  SwimmingPool = 'Swimming Pool',
+  Paving = 'Paving',
+  CarPort = 'Car Port',
+}
+export enum KnownElement {
+  Foundations = 'Foundations',
+  Concrete = 'Concrete',
+  Brickwork = 'Brickwork',
+  RoofingCover = 'RoofingCover',
+  RoofingTrusses = 'RoofingTrusses',
+  CarpentryAndJoineryDoors = 'Carpentry And Joinery - Doors',
+  CarpentryAndJoineryFittedKitchen = 'Carpentry And Joinery - Fitted Kitchen',
+  CarpentryAndJoineryFittedWardrobes = 'Carpentry And Joinery - Fitted Wardrobes',
+  Ceilings = 'Ceilings',
+  FloorCoverings = 'Floor Coverings',
+  Metalwork = 'Metalwork',
+  Plastering = 'Plastering',
+  WallFinishes = 'Wall Finishes',
+  PlumbingAndDrainage = 'Plumbing And Drainage',
+  Paintwork = 'Paintwork',
+  Electrical = 'Electrical',
+  MechanicalWorks = 'Mechanical Works',
+  Veranda = 'Veranda',
+  FurnitureAndFittings = 'Furniture And Fittings',
+  ExternalWorksAccessRoad = 'External Works: Access Road',
+}
+
+export const MiniPropertyOption = {
+  BoundaryWall: {
+    BLOCKS: 'BLOCKS',
+    BLOCKS_WITH_PALISADE: 'BLOCKS WITH PALISADE',
+    PRE_CAST_SLABS: 'PRE-CAST SLABS',
+    STOCK_BRICKS: 'STOCK BRICKS',
+    STOCK_BRICKS_WITH_PALISADE: 'STOCK BRICKS WITH PALISADE',
+    FACE_BRICKS: 'FACE BRICKS',
+    FACE_BRICK_WITH_PALISADE: 'FACE BRICK WITH PALISADE',
+    CLEAR_VU: 'CLEAR-VU',
+    PALISADE: 'PALISADE',
+    DIAMOND_MESH: 'DIAMOND MESH',
+  },
+  ElectricFence: { Yes: 'Electric Fence - Yes', No: 'Electric Fence - No' },
+  Gate: {
+    METAL_GATE_MOTORISED: 'METAL GATE MOTORISED',
+    METAL_GATE_NOT_MOTORISED: 'METAL GATE NOT MOTORISED',
+    DIAMOND_MESH: 'GATE - DIAMOND MESH',
+    NO_GAtE: 'NO GAtE',
+  },
+  SwimmingPool: { Yes: 'SwimmingPool - Yes', No: 'SwimmingPool - No' },
+  Paving: { Yes: 'Paving - Yes', No: 'Paving - No' },
+  CarPort: { Yes: 'CarPort - Yes', No: 'CarPort - No' },
+};
+export const PropertyOption = {
+  Foundations: 'Foundations',
+  Concrete: { Yes: 'Concrete - Yes', No: 'Concrete - No' },
+  Bricks: {
+    StockBricks: 'STOCK BRICKS',
+    Blocks: 'BLOCKS',
+    FaceBricks: 'FACE BRICKS',
+    NoBrickworkDone: 'NO BRICKWORK DONE',
+  },
+  Trusses: {
+    TimberRoofTrusses: 'TIMBER ROOF TRUSSES',
+    StructuralSteelTrusses: 'STRUCTURAL STEEL TRUSSES',
+    NoRoofTrusses: 'NO ROOF TRUSSES',
+  },
+  Roofing: {
+    ConcreteRoofTiles: 'CONCRETE ROOF TILES',
+    IBR: 'IBR',
+    CorrugatedRoofingSheets: 'CORRUGATED ROOFING SHEETS',
+    NoRoofing: 'NO ROOFING',
+  },
+  CarpentryAndJoineryDoors: {
+    Yes: 'CarpentryAndJoineryDoors - Yes',
+    No: 'CarpentryAndJoineryDoors - No',
+  },
+  CarpentryAndJoineryFittedKitchen: {
+    Yes: 'CarpentryAndJoineryFittedKitchen - Yes',
+    No: 'CarpentryAndJoineryFittedKitchen - No',
+  },
+  CarpentryAndJoineryFittedWardrobes: {
+    Yes: 'CarpentryAndJoineryFittedWardrobes - Yes',
+    No: 'CarpentryAndJoineryFittedWardrobes - No',
+  },
+  Ceilings: {
+    Yes: 'Ceilings - Yes',
+    No: 'Ceilings - No',
+  },
+  Flooring: {
+    Vinyl: 'VINYL FLOORING',
+    Tiling: 'TILING FLOORING',
+    Timber: 'TIMBER FLOORING',
+    Carpets: 'CARPETS FLOORING',
+    NoFlooring: 'NO FLOORING',
+  },
+  Frames: {
+    SteelWindow: 'STEEL WINDOW',
+    AluminiumWindow: 'ALUMINIUM WINDOW',
+    NoWindowsFitted: 'NO WINDOWS FITTED',
+  },
+  Plastering: {
+    Yes: 'Plastering - Yes',
+    No: 'Plastering - No',
+  },
+  WallFinishes: {
+    Yes: 'WallFinishes - Yes',
+    No: 'WallFinishes - No',
+  },
+  PlumbingAndDrainage: {
+    Yes: 'PlumbingAndDrainage - Yes',
+    No: 'PlumbingAndDrainage - No',
+  },
+  Paintwork: {
+    Yes: 'Paintwork - Yes',
+    No: 'Paintwork - No',
+  },
+  Electrical: {
+    Yes: 'Electrical - Yes',
+    No: 'Electrical - No',
+  },
+  MechanicalWorks: {
+    Yes: 'MechanicalWorks - Yes',
+    No: 'MechanicalWorks - No',
+  },
+  Veranda: {
+    Yes: 'Veranda - Yes',
+    No: 'Veranda - No',
+  },
+  FurnitureAndFittings: {
+    Yes: 'FurnitureAndFittings - Yes',
+    No: 'FurnitureAndFittings - No',
+  },
+  ExternalWorksAccessRoad: {
+    Yes: 'ExternalWorksAccessRoad - Yes',
+    No: 'ExternalWorksAccessRoad - No',
+  },
+} as const;

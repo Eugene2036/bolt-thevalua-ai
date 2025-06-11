@@ -1,0 +1,30 @@
+export enum PropertyType {
+  ConsultingRm = 'Consulting rm',
+  Factory = 'Factory',
+  Flats = 'Flats',
+  Office = 'Office',
+  Shop = 'Shop',
+  Showroom = 'Showroom',
+  Store = 'Storeroom',
+  // Store = 'Store',
+  Shade = 'Shade',
+  Terrace = 'Terrace',
+  Warehouse = 'Warehouse',
+  Workshop = 'Workshop',
+  Other = 'Other',
+}
+
+export const PROPERTY_TYPES = [
+  PropertyType.ConsultingRm,
+  PropertyType.Factory,
+  PropertyType.Flats,
+  PropertyType.Office,
+  PropertyType.Shop,
+  PropertyType.Showroom,
+  PropertyType.Store,
+  PropertyType.Shade,
+  PropertyType.Terrace,
+  PropertyType.Warehouse,
+  PropertyType.Workshop,
+  PropertyType.Other,
+] as const;
