@@ -1,0 +1,266 @@
+[
+  [
+    "Foundations",
+    "436.96",
+    "436.96",
+    "546.2"
+  ],
+  [
+    "Concrete - Yes",
+    "903.03",
+    "953.59",
+    "1191.99"
+  ],
+  [
+    "Concrete - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "STOCK BRICKS",
+    "543.91",
+    "574.37",
+    "717.97"
+  ],
+  [
+    "BLOCKS",
+    "435.13",
+    "459.5",
+    "574.37"
+  ],
+  [
+    "FACE BRICKS",
+    "707.09",
+    "746.69",
+    "933.36"
+  ],
+  [
+    "NO BRICKWORK DONE",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "TIMBER ROOF TRUSSES",
+    "328.79",
+    "347.2",
+    "434"
+  ],
+  [
+    "STRUCTURAL STEEL TRUSSES",
+    "1033.33",
+    "1091.2",
+    "1364"
+  ],
+  [
+    "NO ROOF TRUSSES",
+    "200",
+    "200",
+    "200"
+  ],
+  [
+    "CONCRETE ROOF TILES",
+    "122.12",
+    "128.96",
+    "161.2"
+  ],
+  [
+    "IBR",
+    "195.39",
+    "206.34",
+    "257.92"
+  ],
+  [
+    "CORRUGATED ROOFING SHEETS",
+    "73.27",
+    "77.38",
+    "96.72"
+  ],
+  [
+    "NO ROOFING",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "CarpentryAndJoineryDoors - Yes",
+    "37.69",
+    "39.8",
+    "49.75"
+  ],
+  [
+    "CarpentryAndJoineryDoors - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "CarpentryAndJoineryFittedKitchen - Yes",
+    "324.15",
+    "342.3",
+    "427.87"
+  ],
+  [
+    "CarpentryAndJoineryFittedKitchen - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "CarpentryAndJoineryFittedWardrobes - Yes",
+    "75.38",
+    "79.6",
+    "99.5"
+  ],
+  [
+    "CarpentryAndJoineryFittedWardrobes - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "Ceilings - Yes",
+    "159.2",
+    "168.11",
+    "210.14"
+  ],
+  [
+    "Ceilings - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "VINYL FLOORING",
+    "177.82",
+    "187.78",
+    "234.73"
+  ],
+  [
+    "TILING FLOORING",
+    "254.03",
+    "268.26",
+    "335.32"
+  ],
+  [
+    "TIMBER FLOORING",
+    "304.84",
+    "321.91",
+    "402.39"
+  ],
+  [
+    "CARPETS FLOORING",
+    "330.24",
+    "348.74",
+    "435.92"
+  ],
+  [
+    "NO FLOORING",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "STEEL WINDOW",
+    "73.28",
+    "77.38",
+    "96.72"
+  ],
+  [
+    "ALUMINIUM WINDOW",
+    "244.25",
+    "257.93",
+    "322.41"
+  ],
+  [
+    "NO WINDOWS FITTED",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "Plastering - Yes",
+    "276.18",
+    "291.65",
+    "364.56"
+  ],
+  [
+    "Plastering - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "WallFinishes - Yes",
+    "63.51",
+    "67.06",
+    "83.83"
+  ],
+  [
+    "WallFinishes - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "PlumbingAndDrainage - Yes",
+    "357.67",
+    "377.69",
+    "472.12"
+  ],
+  [
+    "PlumbingAndDrainage - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "Paintwork - Yes",
+    "157.57",
+    "166.4",
+    "208"
+  ],
+  [
+    "Paintwork - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "Electrical - Yes",
+    "269.47",
+    "284.56",
+    "355.7"
+  ],
+  [
+    "Electrical - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "MechanicalWorks - Yes",
+    "112.73",
+    "119.04",
+    "148.8"
+  ],
+  [
+    "MechanicalWorks - No",
+    "0",
+    "0",
+    "0"
+  ],
+  [
+    "Veranda - Yes",
+    "2724.24",
+    "2876.8",
+    "3596"
+  ],
+  [
+    "Veranda - No",
+    "0",
+    "0",
+    "0"
+  ]
+]
