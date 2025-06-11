@@ -1,0 +1,3003 @@
+{
+    "rptTemplate": {
+        "name": "Commercial",
+        "ReportTemplateSection": [
+            {
+                "refNumber": "0",
+                "name": "Summary of Valuation",
+                "subSections": [
+                    {
+                        "title": "Summary",
+                        "ReportSubSection": [
+                            {
+                                "type": "table",
+                                "props": {
+                                    "textColor": "default"
+                                },
+                                "content": {
+                                    "type": "tableContent",
+                                    "columnWidths": [
+                                        368,
+                                        396
+                                    ],
+                                    "rows": [
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Valuer",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{companyName}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Valuation Date",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{valuationDate}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Plot Description",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{plotDesc}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Plot Extent m² ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{plotExtent}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Physical Address",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{LocationAddress}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Zoning",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{zoning}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Property Classification",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{classification}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Usage",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{usage}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "GLA m² ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{glaTotal}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "GBA m²",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{gbaTotal}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Gross Annual Income ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{grossAnnualIncome}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Net Annual Income ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{netAnnualIncome}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Annual Expenditure ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{annualExpenditure}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Operating Costs / Month (P/m²) ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{operatingCosts}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Annual Expenditure as a % ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{annualExpenditure}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Capitalisation Rate ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{capRate}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Vacancy Rate ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{vacancyRate}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Market Value",
+                                                            "styles": {
+                                                                "bold": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{marketValue}",
+                                                            "styles": {
+                                                                "bold": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Rate/m² based on MV (GLA) ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{ratePerSqmGLA}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Rate/m² based on MV (Plot Size) ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{ratePerSqmPlotExtent}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Total Replacement Value ",
+                                                            "styles": {
+                                                                "bold": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{replacementCost}",
+                                                            "styles": {
+                                                                "bold": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "cells": [
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Rate/m² based on Replacement Cost (GBA) ",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "tableCell",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "{replacementCostPerSqm}",
+                                                            "styles": {}
+                                                        }
+                                                    ],
+                                                    "props": {
+                                                        "colspan": 1,
+                                                        "rowspan": 1,
+                                                        "backgroundColor": "default",
+                                                        "textColor": "default",
+                                                        "textAlignment": "left"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Scope of Work",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "To value the asset in question to establish its ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Market Value",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ", determine a ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Forced Sale Value",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and its ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Gross Replacement Cost",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ".",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Purpose of Valuation",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "For statutory annual financial reporting, in line with acceptable ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "RICS",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "IVS",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " Standards.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Property Description",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "A leasehold interest on Plot ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{plotNumber}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " together with the developments thereon.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Relevance",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This report and any reference to it cannot be published in any form, including documents, circulars, or statements, without the consent of the valuer. The valuer must approve the manner and context in which the report is presented, subject to the parties' pre-existing agreement.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Market Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "P {marketValue} ({marketValueInWords} Pula)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Forced Sale Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "P {forcedValue} ({forcedValueInWords} Pula)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Gross Replacement Cost",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "P {replacementCost} ({replacementCostInWords} Pula)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuer",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "{valuerFullName} {valuerQualification}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "For and on behalf of {companyName}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Email: {companyEmail}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Phone: {companyTel}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "1",
+                "name": "Scope of Work",
+                "subSections": [
+                    {
+                        "title": "Instruction",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This valuation assessment exercise arises from the client’s written instructions to inspect and value the asset in question to establish its ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Market Value",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ", determine a ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Forced Sale Value",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and its ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Gross Replacement Cost",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ".",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Intent",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This report is intended solely for the use of ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{instructionCreatorCompany}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and its advisors and should not be relied on by anyone else or for any purpose other than that stated.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Interest Being Valued",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "A leasehold interest on Plot ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{plotNumber}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " together with the developments thereon. The developments being a hotel, casino conference facility and the supporting developments thereon.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Purpose",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuation is intended for statutory annual financial reporting, in line with acceptable ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "IFRS",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "IVS",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " Standards.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Basis of Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "To establish the Fair Value, Forced Sale Value and Gross Replacement Cost of the subject asset.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuation Standards",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This valuation has been produced in accordance with the guidelines set by the ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Royal Institute of Chartered Surveyors (RICS)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "International Valuation Standards Committee (IVSC)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and adheres to the standards of ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "International Financial Reporting Standards (IFRS).",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Use",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This report and any reference to it cannot be published in any form, including documents, circulars, or statements, without the consent of the valuer. The valuer must approve the manner and context in which the report is presented, subject to the parties' pre-existing agreement.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Limitation and Liability",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "No claim arising out of or in connection with this valuation report may be brought against any member, employee, partner, director or consultant of {companyName}. Those individuals will not have personal duty of care to any party and any claim for losses must be brought against the valuer.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Pecuniary Interest",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "We confirm that we do not have any pecuniary interest that would conflict with the proper valuation of the subject property.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Condition",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "While we were not instructed to conduct a structural survey or provide a full assessment of the properties' condition, a visual inspection suggests that they were constructed in accordance with building requirements. However, we recommend seeking further advice or inspection from relevant stakeholders.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Environment",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "We have no information regarding past mining, contaminated land, radon or other gases, or hazardous materials on the property or adjacent land. Environmental investigations or a site audit were beyond the scope of this report. Should concerns arise, appropriate specialists should be consulted for a comprehensive report.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Our report assumes that all necessary licences, permits, consents, and approvals have been obtained, and that the properties comply with relevant environmental and statutory requirements.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Disclaimer",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Whilst we have attempted to confirm the veracity of information supplied, the scope of work did not extend to verification of all information supplied or due diligence. Our valuation and report has been prepared on the assumption the instructions and information supplied has been provided in good faith and contains a full disclosure of all information that is relevant.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuer and valuation firm does not accept any responsibility or liability whatsoever in the event the valuer has been provided with insufficient, false or misleading information.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "2",
+                "name": "Property Details",
+                "subSections": [
+                    {
+                        "title": "Description",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The subject property is a resort that includes a hotel, casino, and convention centre. It is fully developed with internal infrastructure and features a nature reserve, among other amenities.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Location",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The subject property is situated in Block 5, Gaborone, along the Main Molepolole road. It enjoys high visibility from all directions and can be easily accessed via a tarred road both externally and within the plot. Additionally, the plot provides convenient access to all amenities in Gaborone through the Main Molepolole road and within Block 5.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Plot Size",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This property sits on a land size of ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{plotExtentHectares}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " Hectares",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Construction",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "{constructionTable}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Plinth Area",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "{plinthAreas}",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Accommodation",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Accommodation details here...",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Condition and Repair",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The property appears to be in good condition having regard to its age and use. The external elevations appear to be in sound repair, and the internal areas are clean and well maintained.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Services",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The following services are connected: ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{services}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Tenure",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The property is currently held under a ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Deed of Fixed Period State Grant,",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " registered at the Deeds Office of Gaborone under title deed no. ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{titleDeedNumber}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " dated ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{titleDeedDate}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " in favour of Botswana Hotel Development Company (Pty) Ltd. It is assumed that there are no covenants or encumbrances of a restrictive or onerous nature.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "3",
+                "name": "Scope of Equity",
+                "subSections": [
+                    {
+                        "title": "Inspection and Valuation",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "We advise that we have been instructed to value the property as of the ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{instructionDate}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": ". The Property was inspected on the ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{inspectionDate}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and our valuation reflects the valuer's view of the market as of the ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{valuationDate}",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " and does not purport to predict the future.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuer assumes that the property has not changed in any significant or material way between the date of inspection and the date of valuation. If there have been any substantial changes during that period, the valuer reserves the right to review the valuation at its sole discretion.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Extent of Investigations",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuer has carried out an internal inspection on the property. No limitations or restrictions were encountered during the inspection process.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This valuation includes all the fixed equipment, fixtures, fittings and equipment owned by the Landlord and essential in the running or management of the property. Any items, furnishings, equipment, improvements, plants or fixtures owned by the tenant do not form part of this valuation.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "No consideration of any natural hazards such as ground instability, mining or mineral extraction, radon gas, risk of flooding from all mechanisms, including pluvial and fluvial sources or non-natural hazards such as contamination where substances are in, on or under the ground resulting from current or historic uses, which is beyond the scope of this exercise.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuer, in preparing this valuation, includes due Diligence checks by the review of the legal titles of the property.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Nature and Source of Information",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The data used in the compilation of this report has been obtained from a variety of sources. Sales data sourced from the Deeds Office over the past five years in addition to Real Asset’s own proprietary transaction database and third party brokers.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Market Data has been sourced using primary research tools supported by data from the Statistics Botswana, Deeds Registry, DSM among others.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Supplementary data and general market information was compiled from a number of public domain sources and reports in addition to our own surveys and data mining efforts.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Since the valuation will be based on a number of assumptions that have been compiled by Real Assets on a best effort basis according to current knowledge of market dynamics and available information, actual market conditions may differ from stated assumptions.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "All valuations are backwards looking and thus based on past evidence and not future predictions. As such the valuation is most accurate at the date of valuation and loses considerable accuracy over time. It is estimated that stated valuations are accurate for a period of no more than 12 months from the date of valuation.",
+                                        "styles": {
+                                            "textColor": "red"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The valuer has further relied on the following documents:",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "bulletListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Agreements between client and tenant,",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "bulletListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Title deed, and",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "bulletListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Property Floor Plans",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Assumptions",
+                        "ReportSubSection": [
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The property is entirely free of encumbrances, restrictions, easements and restrictive covenants.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "No hazardous materials are used in the construction of the property",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "There are no current plans by authorities that would impact the value of the property.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "There are no plans to change laws and regulations surrounding property ownership and use.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Data (financial or otherwise) provided by the ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Client",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " will be assumed true without Due Diligence.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The property is not subject of any environment related risks",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The buildings are structurally sound, and there are no structural, latent or other material defects, including rot and inherently dangerous or unsuitable materials or construction techniques, whether in parts of the building we have inspected or not.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The buildings have been constructed and are used in accordance with all statutory and by-law requirements, and that there are no breaches of planning control. Likewise, that any future construction or use will be lawful.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The property is connected, or capable of being connected without undue expense, to the public services of gas, electricity, water, telephones and sewerage.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Special Assumptions",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "When valuing investment properties, some special assumptions that we have considered include the following:",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The expected rental income over a certain period.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The potential for changes in demand or supply factors that may affect the valuation of the property.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The impact of inflation on the property, including expenses such as maintenance costs.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The potential financial risks associated with the investment.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "numberedListItem",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The tax implications of owning the property.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuation Methodology",
+                        "ReportSubSection": [
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "To establish the appropriate valuation method for the subject property, the fact that it generates income was taken into consideration. After careful review, the Income Capitalisation Method using ",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Discounted Cash Flow (DCF)",
+                                        "styles": {
+                                            "bold": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " approach was deemed the most suitable.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "This is a comprehensive valuation technique primarily used for income-producing properties. This method estimates the present value of future cash flows generated by the property, taking into account the time value of money.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Market",
+                        "ReportSubSection": [
+                            {
+                                "type": "heading",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left",
+                                    "level": 3
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Market Overview",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "The hotel investment property market is currently stable, with improved occupancy rates observed across the sector over the last year. However, investors remain cautious, particularly regarding lower-tier (\"B\" or \"C\" grade) properties with lower occupancy rates.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "heading",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left",
+                                    "level": 3
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Supply Dynamics",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Greater Gaborone faces a shortage of high-quality hotels. In the past decade, only a few developments have materialised, including Room52 and the renovated Oasis Hotel in Tlokweng. This limited supply growth highlights potential opportunities in the market.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "heading",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left",
+                                    "level": 3
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Demand Trends",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Well-situated commercial accommodations in the greater Gaborone area continue to experience robust demand. This trend underscores the potential for strategically located hotel investments.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "heading",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left",
+                                    "level": 3
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Investment Outlook",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Despite the general adequacy of quality hotels in greater Gaborone, sellers of prime properties may expect relatively quick transactions due to the ongoing demand-supply imbalance in the high-end segment.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "heading",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left",
+                                    "level": 3
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Future Projections",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": "Considering the sustained growth in the hospitality sector within greater Gaborone, it is anticipated that future property values will align with broader market trends. This suggests a potentially favourable long-term outlook for well-positioned hotel investments in the area.",
+                                        "styles": {}
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "type": "paragraph",
+                                "props": {
+                                    "textColor": "default",
+                                    "backgroundColor": "default",
+                                    "textAlignment": "left"
+                                },
+                                "content": [],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
