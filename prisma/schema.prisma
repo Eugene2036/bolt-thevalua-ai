@@ -1,0 +1,1006 @@
+generator client {
+  provider = "prisma-client-js"
+  url      = env("DATABASE_URL")
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id                 String       @id @default(cuid())
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  plotId             String
+  name               String
+  termOfLease        String
+  leaseLife          Decimal      @default(0.00) @db.Decimal(19, 2)
+  startDate          DateTime     @default(now())
+  endDate            DateTime     @default(now())
+  grossMonthlyRental Decimal      @db.Decimal(19, 2)
+  escalation         Decimal      @db.Decimal(19, 2)
+  propertyTypeId     String
+  areaPerClient      Decimal      @db.Decimal(19, 2)
+  areaPerMarket      Decimal      @db.Decimal(19, 2)
+  grossRatePerValuer Int
+  ratePerMarket      Decimal      @default(0.00) @db.Decimal(19, 2)
+  plot               Plot         @relation(fields: [plotId], references: [id], onDelete: Cascade)
+  propertyType       PropertyType @relation(fields: [propertyTypeId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "Tenant_plotId_fkey")
+  @@index([propertyTypeId], map: "Tenant_propertyTypeId_fkey")
+}
+
+model PropertyType {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  identifier String
+  tenants    Tenant[]
+}
+
+model Insurance {
+  id                 String            @id @default(cuid())
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  plotId             String
+  itemId             String
+  roofTypeId         String?
+  constructionPropId String?
+  rate               Decimal           @db.Decimal(19, 2)
+  area               Decimal?          @db.Decimal(19, 2)
+  constructionProp   ConstructionProp? @relation(fields: [constructionPropId], references: [id], onDelete: Cascade)
+  item               InsuranceItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  plot               Plot              @relation(fields: [plotId], references: [id], onDelete: Cascade)
+  roofType           RoofType?         @relation(fields: [roofTypeId], references: [id], onDelete: Cascade)
+
+  @@index([constructionPropId], map: "Insurance_constructionPropId_fkey")
+  @@index([itemId], map: "Insurance_itemId_fkey")
+  @@index([plotId], map: "Insurance_plotId_fkey")
+  @@index([roofTypeId], map: "Insurance_roofTypeId_fkey")
+}
+
+model RoofType {
+  id               String      @id @default(cuid())
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  identifier       String
+  insuranceRecords Insurance[]
+}
+
+model InsuranceItem {
+  id               String      @id @default(cuid())
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  identifier       String
+  isActive         Boolean     @default(true)
+  insuranceRecords Insurance[]
+}
+
+model Outgoing {
+  id            String   @id @default(cuid())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  plotId        String
+  itemType      String?
+  identifier    String
+  unitPerClient Decimal  @db.Decimal(19, 4)
+  ratePerClient Decimal  @db.Decimal(19, 4)
+  unitPerMarket Int
+  ratePerMarket Decimal  @db.Decimal(19, 2)
+  plot          Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "Outgoing_plotId_fkey")
+}
+
+model Parking {
+  id            String      @id @default(cuid())
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  plotId        String
+  parkingTypeId String
+  unitPerClient Decimal     @db.Decimal(19, 2)
+  ratePerClient Decimal     @db.Decimal(19, 2)
+  unitPerMarket Int
+  ratePerMarket Decimal     @db.Decimal(19, 2)
+  parkingType   ParkingType @relation(fields: [parkingTypeId], references: [id], onDelete: Cascade)
+  plot          Plot        @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([parkingTypeId], map: "Parking_parkingTypeId_fkey")
+  @@index([plotId], map: "Parking_plotId_fkey")
+}
+
+model ParkingType {
+  id             String    @id @default(cuid())
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  identifier     String
+  parkingRecords Parking[]
+}
+
+model Plot {
+  id                        String                @id @default(cuid())
+  createdAt                 DateTime              @default(now())
+  updatedAt                 DateTime              @updatedAt
+  globalId                  String
+  propertyId                Int
+  plotNumber                String                @unique
+  council                   Boolean               @default(false)
+  hasBeenZeroReviewed       Boolean               @default(false)
+  ZoneValue                 String                @default("")
+  valuedById                String?
+  reviewedById              String?
+  valuer                    String
+  inspectionDate            DateTime              @default(now())
+  analysisDate              DateTime              @default(now())
+  plotDesc                  String?
+  accommodation             String?
+  construction              String?
+  constructionDesc          String?
+  propertyLocation          String?
+  plotExtent                Decimal               @db.Decimal(19, 2)
+  address                   String                @db.MediumText
+  zoning                    String
+  classification            String
+  usage                     String
+  undevelopedPortion        Decimal               @default(0.00) @db.Decimal(19, 2)
+  rateForUndevelopedPortion Decimal               @default(0.00) @db.Decimal(19, 2)
+  services                  String?               @db.LongText
+  summaryOfValuation        String?               @db.LongText
+  opinionOfValue            String?               @db.LongText
+  scopeOfWork               String?               @db.LongText
+  basesOfValue              String?               @db.LongText
+  propertyDetails           String?               @db.LongText
+  scopeOfEquity             String?               @db.LongText
+  tableOfContents           String?               @db.LongText
+  reportTemplateId          String?
+  rptTemplateId             String?
+  capRate                   Decimal?              @db.Decimal(19, 2)
+  marketValue               Decimal?              @db.Decimal(19, 2)
+  highest                   String?               @db.LongText
+  commentOnLeases           String?               @db.LongText
+  marketCondition           String?               @db.LongText
+  numAirCon                 Int?                  @default(0)
+  numParkingBays            Int?                  @default(0)
+  numOfStructures           Int?                  @default(0)
+  SwimmingPool              String?
+  Paving                    String?
+  Boundary                  String?
+  Perimeter                 Decimal?              @db.Decimal(19, 2)
+  titleDeedNum              String?
+  titleDeedDate             DateTime              @default(now())
+  valuationType             String
+  valuationDone             Boolean               @default(false)
+  valuerComments            String?               @db.LongText
+  longitude                 Decimal?              @db.Decimal(19, 15)
+  latitude                  Decimal?              @db.Decimal(19, 15)
+  mapLabel                  String?
+  userId                    String
+  coverImageId              String                @default("")
+  mapImageId                String                @default("")
+  companyId                 String
+  valuationsHistoryId       String?
+  constructionItems         String?               @db.LongText
+  footerNote                String?
+  headerTitle               String?
+  reportComments            String                @default("") @db.Text
+  reportReviewedById        String?
+  reportValuedById          String?
+  clients                   Client[]
+  grcRecords                Grc[]
+  grcDeprRecords            GrcDepr[]
+  grcFeeRecords             GrcFee[]
+  images                    Image[]
+  insuranceRecords          Insurance[]
+  mvRecords                 Mv[]
+  notifications             Notification[]
+  outgoingRecords           Outgoing[]
+  parkingRecords            Parking[]
+  company                   Company               @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  reportReviewedBy          User?                 @relation("reportReviewedBy", fields: [reportReviewedById], references: [id], onDelete: Cascade)
+  reportValuedBy            User?                 @relation("reportValuedBy", fields: [reportValuedById], references: [id], onDelete: Cascade)
+  reviewedBy                User?                 @relation("reviewedBy", fields: [reviewedById], references: [id], onDelete: Cascade)
+  reportTemplate            RptTemplate?          @relation(fields: [rptTemplateId], references: [id])
+  user                      User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ValuationsHistory         ValuationsHistory?    @relation(fields: [valuationsHistoryId], references: [id])
+  valuedBy                  User?                 @relation("valuedBy", fields: [valuedById], references: [id], onDelete: Cascade)
+  plotAndComparables        PlotAndComparable[]
+  sections                  ReportSection[]
+  SavedConfig               SavedConfig[]
+  storedValues              StoredValue[]
+  tenants                   Tenant[]
+  valuers                   Valuer[]
+  PlotAiAnalysis            PlotAiAnalysis[]
+  propertyOwnerAppeal       PropertyOwnerAppeal[]
+
+  @@index([companyId], map: "Plot_companyId_fkey")
+  @@index([reportReviewedById], map: "Plot_reportReviewedById_fkey")
+  @@index([reportValuedById], map: "Plot_reportValuedById_fkey")
+  @@index([reviewedById], map: "Plot_reviewedById_fkey")
+  @@index([rptTemplateId], map: "Plot_rptTemplateId_fkey")
+  @@index([userId], map: "Plot_userId_fkey")
+  @@index([valuationsHistoryId], map: "Plot_valuationsHistoryId_fkey")
+  @@index([valuedById], map: "Plot_valuedById_fkey")
+}
+
+model ComparablePlot {
+  id              String   @id @default(cuid())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  plotNumber      String
+  plotExtent      Decimal  @db.Decimal(19, 2)
+  propertyType    String
+  location        String
+  suburb          String
+  price           Decimal  @db.Decimal(19, 2)
+  transactionDate DateTime
+  titleDeed       String   @default("")
+  status          String   @default("")
+  plotDesc        String   @default("")
+
+  numAirCons      Int @default(0)
+  numParkingBays  Int @default(0)
+  numOfStructures Int @default(0)
+  numToilets      Int @default(0)
+  numStorerooms   Int @default(0)
+  numBathrooms    Int @default(0)
+
+  swimmingPool       String @default("No")
+  paving             String @default("None")
+  boundary           String @default("None")
+  garageType         String @default("None")
+  kitchen            String @default("No")
+  wardrobe           String @default("No")
+  roofModel          String @default("None")
+  ceiling            String @default("None")
+  interiorWallFinish String @default("Unknown")
+
+  longitude Decimal? @db.Decimal(19, 15)
+  latitude  Decimal? @db.Decimal(19, 15)
+
+  comparableImage    ComparableImage[]
+  plotAndComparables PlotAndComparable[]
+  plotAiAnalysisId   String?
+  plotAiAnalysis     PlotAiAnalysis?     @relation("PlotAiAnalysisToComparablePlot", fields: [plotAiAnalysisId], references: [id])
+  comparablePlotId   String?
+}
+
+model InspectionsData {
+  globalId       String   @id @default(cuid())
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  inspectionDate DateTime
+  plotNumber     String
+  plotExtent     Decimal  @db.Decimal(19, 2)
+  classification String
+  propertyType   String
+  location       String
+  suburb         String
+
+  landValue         Decimal @db.Decimal(19, 2)
+  improvementsValue Decimal @db.Decimal(19, 2)
+  capitalValue      Decimal @db.Decimal(19, 2)
+  perimeter         Decimal @db.Decimal(19, 2)
+
+  titleDeed String @default("")
+  status    String @default("")
+  plotDesc  String @default("")
+
+  numAirCons      Int @default(0)
+  numParkingBays  Int @default(0)
+  numOfStructures Int @default(0)
+  numToilets      Int @default(0)
+  numStorerooms   Int @default(0)
+  numBathrooms    Int @default(0)
+
+  swimmingPool       String @default("No")
+  paving             String @default("None")
+  boundary           String @default("None")
+  garageType         String @default("None")
+  kitchen            String @default("No")
+  wardrobe           String @default("No")
+  roofModel          String @default("None")
+  ceiling            String @default("None")
+  interiorWallFinish String @default("Unknown")
+
+  longitude Decimal? @db.Decimal(19, 15)
+  latitude  Decimal? @db.Decimal(19, 15)
+}
+
+model PlotAiAnalysis {
+  id        String   @id @default(cuid())
+  plotId    String
+  plot      Plot     @relation(fields: [plotId], references: [id])
+  query     String   @db.LongText
+  analysis  String   @db.LongText
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  comparablePlots ComparablePlot[] @relation("PlotAiAnalysisToComparablePlot")
+
+  @@index([plotId])
+}
+
+model ComparableImage {
+  id               String         @id @default(cuid())
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  imageId          String
+  comparablePlotId String
+  comparablePlot   ComparablePlot @relation(fields: [comparablePlotId], references: [id])
+
+  @@index([comparablePlotId], map: "ComparableImage_comparablePlotId_fkey")
+}
+
+model PlotAndComparable {
+  id               String         @id @default(cuid())
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  plotId           String
+  comparablePlotId String
+  valuerComments   String?        @db.LongText
+  comparablePlot   ComparablePlot @relation(fields: [comparablePlotId], references: [id], onDelete: Cascade)
+  plot             Plot           @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([comparablePlotId], map: "PlotAndComparable_comparablePlotId_fkey")
+  @@index([plotId], map: "PlotAndComparable_plotId_fkey")
+}
+
+model Image {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  imageId   String
+  plotId    String
+  companyId String?
+  Company   Company? @relation(fields: [companyId], references: [id])
+  plot      Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([companyId], map: "Image_companyId_fkey")
+  @@index([plotId], map: "Image_plotId_fkey")
+}
+
+model CompanyImage {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  imageId   String
+  companyId String
+  company   Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+
+  @@index([companyId], map: "CompanyImage_companyId_fkey")
+}
+
+model Client {
+  id            String   @id @default(cuid())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  postalAddress String
+  postalCode    String?
+  phyAddress    String
+  email         String
+  telephone     String
+  clientType    String
+  companyName   String?
+  position      String?
+  firstName     String
+  lastName      String
+  title         String   @default("")
+  repEmail      String   @default("")
+  repPhone      String   @default("")
+  plotId        String
+  plot          Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "Client_plotId_fkey")
+}
+
+model Valuer {
+  id                       String   @id @default(cuid())
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+  firstName                String
+  lastName                 String
+  practicingCertificate    String
+  practicingCertificateNum String?
+  postalAddress            String?
+  physicalAddress          String
+  email                    String
+  telephone                String
+  firm                     String
+  declaration              Boolean
+  reportTemplateId         String?
+  plotId                   String
+  plot                     Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "Valuer_plotId_fkey")
+}
+
+model Grc {
+  id                 String            @id @default(cuid())
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  plotId             String
+  constructionPropId String?
+  bull               Boolean?
+  identifier         String
+  unit               String
+  size               Decimal           @db.Decimal(19, 4)
+  rate               Decimal           @default(0.0000) @db.Decimal(19, 4)
+  constructionProp   ConstructionProp? @relation(fields: [constructionPropId], references: [id], onDelete: Cascade)
+  plot               Plot              @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([constructionPropId], map: "Grc_constructionPropId_fkey")
+  @@index([plotId], map: "Grc_plotId_fkey")
+}
+
+model GrcFee {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  plotId     String
+  identifier String
+  perc       Decimal  @db.Decimal(19, 4)
+  plot       Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "GrcFee_plotId_fkey")
+}
+
+model GrcDepr {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  plotId     String
+  identifier String
+  perc       Decimal  @db.Decimal(19, 4)
+  plot       Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "GrcDepr_plotId_fkey")
+}
+
+model Mv {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  plotId     String
+  identifier String
+  size       Decimal  @db.Decimal(19, 4)
+  date       DateTime
+  location   String
+  price      Decimal  @db.Decimal(19, 4)
+  plot       Plot     @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "Mv_plotId_fkey")
+}
+
+model Password {
+  hash   String
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id                       String                @id @default(cuid())
+  createdAt                DateTime              @default(now())
+  updatedAt                DateTime              @updatedAt
+  firstName                String                @default("")
+  lastName                 String                @default("")
+  practicingCertificate    String                @default("")
+  practicingCertificateNum String?               @default("")
+  physicalAddress          String                @default("") @db.MediumText
+  postalAddress            String?               @default("") @db.MediumText
+  phone                    String                @default("")
+  email                    String                @unique @db.VarChar(50)
+  firm                     String                @default("")
+  declaration              Boolean               @default(false)
+  reportTemplateId         String?
+  isSuper                  Boolean               @default(false)
+  isSuspended              Boolean               @default(false)
+  isBanker                 Boolean               @default(false)
+  isVerified               Boolean               @default(false)
+  verToken                 String                @default("")
+  profilePic               String?               @default("wi6eipxtrg9kj77exi87")
+  target                   Int                   @default(0)
+  userGroupId              String?
+  profileSignature         String?               @default("signature_placeholder")
+  isSignatory              Boolean               @default(false)
+  Event                    Event[]
+  Message                  Message[]
+  createdNotifications     Notification[]        @relation("CreatedNotifications")
+  notifications            Notification[]
+  password                 Password?
+  reportReviewedPlots      Plot[]                @relation("reportReviewedBy")
+  reportValuedPlots        Plot[]                @relation("reportValuedBy")
+  reviewedPlots            Plot[]                @relation("reviewedBy")
+  Plot                     Plot[]
+  valuedPlots              Plot[]                @relation("valuedBy")
+  UserGroup                UserGroup?            @relation(fields: [userGroupId], references: [id])
+  ValuationsHistory        ValuationsHistory[]
+  propertyOwnerAppeal      PropertyOwnerAppeal[]
+
+  @@index([userGroupId], map: "User_userGroupId_fkey")
+}
+
+model PropertyOwnerAppeal {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  firstName String  @default("") @db.VarChar(255)
+  lastName  String  @default("") @db.VarChar(255)
+  email     String  @default("") @db.VarChar(255)
+  phone     String  @default("") @db.VarChar(255)
+  message   String? @db.Text
+  userId    String? @default("") @db.VarChar(255)
+  user      User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  plotId    String? @db.VarChar(255)
+  plot      Plot?   @relation(fields: [plotId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+model Notification {
+  noteId            String       @id @default(cuid())
+  createdAt         DateTime     @default(now())
+  createdById       String
+  updatedAt         DateTime     @updatedAt
+  plotNum           String       @default("")
+  message           String       @default("")
+  messageBody       String?
+  approved          Boolean      @default(true)
+  approvedById      String?
+  approvedDate      DateTime?
+  accepted          String       @default("Unread")
+  userId            String
+  acceptedDate      DateTime?
+  plotId            String       @default("")
+  clientType        String       @default("Individual")
+  companyName       String?
+  email             String       @default("")
+  firstName         String       @default("")
+  lastName          String       @default("")
+  phyAddress        String       @default("")
+  position          String?
+  postalAddress     String?
+  postalCode        String?
+  repEmail          String       @default("")
+  repPhone          String       @default("")
+  telephone         String       @default("")
+  title             String       @default("")
+  declineReason     String?
+  location          String       @default("")
+  neighbourhood     String       @default("")
+  declaration       Boolean      @default(false)
+  valuerAttachments String?      @default("")
+  valuationKind     String
+  delegated         Boolean      @default(false)
+  attachments       Attachment[]
+  Message           Message[]
+  createdBy         User         @relation("CreatedNotifications", fields: [createdById], references: [id])
+  plot              Plot         @relation(fields: [plotId], references: [id])
+  user              User         @relation(fields: [userId], references: [id])
+
+  @@index([createdById], map: "Notification_createdById_fkey")
+  @@index([plotId], map: "Notification_plotId_fkey")
+  @@index([userId], map: "Notification_userId_fkey")
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  userId         String
+  content        String       @db.LongText
+  notificationId String
+  notification   Notification @relation(fields: [notificationId], references: [noteId])
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([notificationId], map: "Message_notificationId_fkey")
+  @@index([userId], map: "Message_userId_fkey")
+}
+
+model Attachment {
+  id             String       @id @default(cuid())
+  fileName       String
+  fileUrl        String
+  notificationId String
+  fileType       String
+  createdBy      String       @default("Instructor")
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  notification   Notification @relation(fields: [notificationId], references: [noteId])
+
+  @@index([notificationId], map: "Attachment_notificationId_fkey")
+}
+
+model UserGroup {
+  id                      String   @id @default(cuid())
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+  name                    String   @unique @default("")
+  allowCompanySettings    Boolean  @default(false)
+  allowCreateNewCompany   Boolean  @default(false)
+  allowDeleteCompany      Boolean  @default(false)
+  allowUserManagement     Boolean  @default(false)
+  allowUserActivity       Boolean  @default(false)
+  allowSetValuerTargets   Boolean  @default(false)
+  allowCreateNewUser      Boolean  @default(false)
+  allowValuationsDownload Boolean  @default(false)
+  allowUnvaluedProperties Boolean  @default(false)
+  allowMarkAsReviewed     Boolean  @default(false)
+  isSuper                 Boolean  @default(false)
+  isInstructor            Boolean  @default(false)
+  companyId               String
+  users                   User[]
+  company                 Company  @relation(fields: [companyId], references: [id])
+
+  @@index([companyId], map: "UserGroup_companyId_fkey")
+}
+
+model Company {
+  id                String              @id @default(cuid())
+  FullName          String              @default("")
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  CompanyName       String              @default("")
+  LocationAddress   String              @default("")
+  PostalAddress     String              @default("")
+  Phone             String              @default("")
+  Mobile            String              @default("")
+  Fax               String?             @default("")
+  Email             String              @unique @default("")
+  Website           String?             @default("")
+  LogoLink          String?             @default("") @db.LongText
+  footerNote        String?
+  headerTitle       String?
+  isSuspended       Boolean             @default(false)
+  CompanyImage      CompanyImage[]
+  Image             Image[]
+  Plot              Plot[]
+  reportTemplates   ReportTemplate[]
+  rptTemplates      RptTemplate[]
+  userGroups        UserGroup[]
+  ValuationsHistory ValuationsHistory[]
+}
+
+model RptTemplate {
+  id        String                  @id @default(cuid())
+  createdAt DateTime                @default(now())
+  updatedAt DateTime                @updatedAt
+  name      String                  @unique
+  companyId String
+  Plot      Plot[]
+  sections  ReportTemplateSection[]
+  Company   Company                 @relation(fields: [companyId], references: [id])
+
+  @@index([companyId], map: "RptTemplate_companyId_fkey")
+}
+
+model ReportTemplateSection {
+  id            String               @id @default(cuid())
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+  refNumber     Int
+  name          String
+  templateId    String
+  ReportSection ReportSection[]
+  Template      RptTemplate          @relation(fields: [templateId], references: [id])
+  subSections   TemplateSubSection[]
+
+  @@index([templateId], map: "ReportTemplateSection_templateId_fkey")
+}
+
+model TemplateSubSection {
+  id               String                @id @default(cuid())
+  createdAt        DateTime              @default(now())
+  updatedAt        DateTime              @updatedAt
+  sectionId        String
+  title            String?
+  content          String                @default("") @db.LongText
+  ReportSubSection ReportSubSection[]
+  section          ReportTemplateSection @relation(fields: [sectionId], references: [id])
+
+  @@index([sectionId], map: "TemplateSubSection_sectionId_fkey")
+}
+
+model ReportSection {
+  id                String                 @id @default(cuid())
+  createdAt         DateTime               @default(now())
+  updatedAt         DateTime               @updatedAt
+  templateSectionId String?
+  refNumber         Int
+  name              String
+  plotId            String
+  Plot              Plot                   @relation(fields: [plotId], references: [id], onDelete: Cascade)
+  templateSection   ReportTemplateSection? @relation(fields: [templateSectionId], references: [id])
+  subSections       ReportSubSection[]
+
+  @@index([plotId], map: "ReportSection_plotId_fkey")
+  @@index([templateSectionId], map: "ReportSection_templateSectionId_fkey")
+}
+
+model ReportSubSection {
+  id                   String              @id @default(cuid())
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+  templateSubSectionId String?
+  sectionId            String
+  title                String?
+  content              String              @default("") @db.LongText
+  section              ReportSection       @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  templateSubSection   TemplateSubSection? @relation(fields: [templateSubSectionId], references: [id])
+
+  @@index([sectionId], map: "ReportSubSection_sectionId_fkey")
+  @@index([templateSubSectionId], map: "ReportSubSection_templateSubSectionId_fkey")
+}
+
+model ReportTemplate {
+  id                       String         @id @default(cuid())
+  createdAt                DateTime       @default(now())
+  updatedAt                DateTime       @updatedAt
+  name                     String         @unique
+  scopeOfWork              String?        @db.LongText
+  purposeOfValuation       String?        @db.LongText
+  propertyDescription      String?        @db.LongText
+  relevance                String?        @db.LongText
+  instruction              String?        @db.LongText
+  intent                   String?        @db.LongText
+  interestBeingValued      String?        @db.LongText
+  purpose                  String?        @db.LongText
+  basisOfValue             String?        @db.LongText
+  valuationStandard        String?        @db.LongText
+  landUse                  String?        @db.LongText
+  limitationLiability      String?        @db.LongText
+  pecularityInterest       String?        @db.LongText
+  condition                String?        @db.LongText
+  environment              String?        @db.LongText
+  disclaimer               String?        @db.LongText
+  marketValue              String?        @db.LongText
+  forcedSaleValue          String?        @db.LongText
+  insuranceReplacementCost String?        @db.LongText
+  plotDesc                 String?        @db.LongText
+  location                 String?        @db.LongText
+  construction             String?        @db.LongText
+  accommodation            String?        @db.LongText
+  conditionAndRepair       String?        @db.LongText
+  services                 String?        @db.LongText
+  tenure                   String?        @db.LongText
+  highestBestUse           String?        @db.LongText
+  inspectionAndValuation   String?        @db.LongText
+  extentOfInvestigations   String?        @db.LongText
+  natureSourceOfInfo       String?        @db.LongText
+  assumptions              String?        @db.LongText
+  specialAssumptions       String?        @db.LongText
+  enableCapRate            Boolean?       @default(false)
+  commentsOnCapRates       String?        @db.LongText
+  valuationMethodology     String?        @db.LongText
+  market                   String?        @db.LongText
+  planning                 String?        @db.LongText
+  companyId                String
+  reportHeader             ReportHeader[]
+  Company                  Company        @relation(fields: [companyId], references: [id])
+
+  @@index([companyId], map: "ReportTemplate_companyId_fkey")
+}
+
+model ReportHeader {
+  id               String            @id @default(cuid())
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  headerTitle      String
+  reportTemplateId String
+  reportTemplate   ReportTemplate    @relation(fields: [reportTemplateId], references: [id])
+  reportSubHeader  ReportSubHeader[]
+
+  @@index([reportTemplateId], map: "ReportHeader_reportTemplateId_fkey")
+}
+
+model ReportSubHeader {
+  id                String             @id @default(cuid())
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  subHeaderTitle    String
+  reportHeaderId    String?
+  reportBodyContent ReportBodyContent?
+  reportHeader      ReportHeader?      @relation(fields: [reportHeaderId], references: [id])
+
+  @@index([reportHeaderId], map: "ReportSubHeader_reportHeaderId_fkey")
+}
+
+model ReportBodyContent {
+  id              String          @id @default(cuid())
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  bodyContentInfo String          @db.LongText
+  subHeaderId     String          @unique
+  reportSubHeader ReportSubHeader @relation(fields: [subHeaderId], references: [id])
+}
+
+model ValuationsHistory {
+  id                        String    @id @default(cuid())
+  createdAt                 DateTime  @default(now())
+  updatedAt                 DateTime  @updatedAt
+  plotNumber                String
+  council                   Boolean   @default(false)
+  hasBeenZeroReviewed       Boolean   @default(false)
+  ZoneValue                 String    @default("")
+  valuer                    String
+  inspectionDate            DateTime  @default(now())
+  analysisDate              DateTime  @default(now())
+  plotDesc                  String?
+  accommodation             String?
+  construction              String?
+  constructionDesc          String?
+  propertyLocation          String?
+  plotExtent                Decimal   @db.Decimal(19, 2)
+  address                   String    @db.MediumText
+  zoning                    String
+  classification            String
+  usage                     String
+  undevelopedPortion        Decimal   @default(0.00) @db.Decimal(19, 2)
+  rateForUndevelopedPortion Decimal   @default(0.00) @db.Decimal(19, 2)
+  services                  String?   @db.LongText
+  summaryOfValuation        String?   @db.LongText
+  opinionOfValue            String?   @db.LongText
+  scopeOfWork               String?   @db.LongText
+  basesOfValue              String?   @db.LongText
+  propertyDetails           String?   @db.LongText
+  scopeOfEquity             String?   @db.LongText
+  reportTemplateId          String?
+  tableOfContents           String?   @db.LongText
+  highest                   String?   @db.LongText
+  commentOnLeases           String?   @db.LongText
+  marketCondition           String?   @db.LongText
+  numAirCon                 Int?      @default(0)
+  numParkingBays            Int?      @default(0)
+  numOfStructures           Int?      @default(0)
+  SwimmingPool              String?
+  Paving                    String?
+  Boundary                  String?
+  Perimeter                 Decimal?  @db.Decimal(19, 2)
+  titleDeedNum              String?
+  titleDeedDate             DateTime  @default(now())
+  valuationType             String
+  valuationDone             Boolean   @default(false)
+  valuerComments            String?   @db.LongText
+  longitude                 Decimal?  @db.Decimal(19, 15)
+  latitude                  Decimal?  @db.Decimal(19, 15)
+  mapLabel                  String?
+  capRate                   Decimal   @default(0.00) @db.Decimal(19, 2)
+  marketValue               Decimal   @default(0.00) @db.Decimal(19, 2)
+  fairValue                 Decimal   @default(0.00) @db.Decimal(19, 2)
+  forcedSaleValue           Decimal   @default(0.00) @db.Decimal(19, 2)
+  insuranceReplacementCost  Decimal   @default(0.00) @db.Decimal(19, 2)
+  landValue                 Decimal   @default(0.00) @db.Decimal(19, 2)
+  capitalValue              Decimal   @default(0.00) @db.Decimal(19, 2)
+  valuerFullname            String?
+  valuerQualification       String?
+  plotId                    String
+  companyId                 String
+  reportStatus              String    @default("Draft")
+  reportFile                String?
+  reviewFinish              DateTime?
+  reviewStartDate           DateTime?
+  valuationFinishDate       DateTime?
+  valuationStartDate        DateTime?
+  plot                      Plot[]
+  company                   Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  user                      User      @relation(fields: [valuer], references: [id], onDelete: Cascade)
+
+  @@index([companyId], map: "ValuationsHistory_companyId_fkey")
+  @@index([valuer], map: "ValuationsHistory_valuer_fkey")
+}
+
+model StoredValue {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  plotId     String?
+  identifier String   @db.VarChar(50)
+  value      Decimal  @db.Decimal(19, 2)
+  plot       Plot?    @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "StoredValue_plotId_fkey")
+}
+
+model SavedConfig {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  plotId     String?
+  identifier String   @db.VarChar(50)
+  value      String?  @db.VarChar(400)
+  plot       Plot?    @relation(fields: [plotId], references: [id], onDelete: Cascade)
+
+  @@index([plotId], map: "SavedConfig_plotId_fkey")
+}
+
+model Suburb {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  identifier String   @db.VarChar(400)
+}
+
+model Event {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  userId     String
+  domain     String
+  action     String
+  recordId   String
+  recordData String   @db.LongText
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId], map: "Event_userId_fkey")
+}
+
+model ConstructionProp {
+  id               String                     @id @default(cuid())
+  createdAt        DateTime                   @default(now())
+  updatedAt        DateTime                   @updatedAt
+  name             String
+  floorArea        Decimal                    @db.Decimal(19, 2)
+  verandaFloorArea Decimal                    @default(0.00) @db.Decimal(19, 2)
+  devYear          String
+  kind             String?
+  items            ConstructionPropertyItem[]
+  grcs             Grc[]
+  insurances       Insurance[]
+}
+
+model ConstructionPropertyItem {
+  id                   String           @id @default(cuid())
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+  element              String
+  propertyOption       String
+  qualityOfFinish      String
+  multiplierIdentifier String?
+  multiplier           Decimal?         @db.Decimal(19, 2)
+  propId               String
+  prop                 ConstructionProp @relation(fields: [propId], references: [id], onDelete: Cascade)
+
+  @@index([propId], map: "ConstructionPropertyItem_propId_fkey")
+}
+
+model YearRangeValue {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  identifier String
+  first      Decimal  @db.Decimal(19, 2)
+  second     Decimal  @db.Decimal(19, 2)
+  third      Decimal  @db.Decimal(19, 2)
+  kind       String?
+}
+
+model StoredStructureData {
+  objectid           String   @id @default(cuid())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  globalid           String
+  parentglobalid     String
+  MeasuredArea       Decimal  @default(0.00) @db.Decimal(19, 2)
+  RoomStructure      String
+  StructureType      String
+  OfficeNo           Int?     @default(0)
+  ToiletsNo          Int?     @default(0)
+  StoreroomNo        Int?     @default(0)
+  Aircon             Int?     @default(0)
+  DevStatus          String
+  Bathrooms          Int?     @default(0)
+  GarageType         String
+  Kitchen            String
+  Wardrobe           String
+  Wall               String
+  WallFinish         String
+  FloorConstruction  String
+  Roof               String
+  Services           String
+  Rental             Decimal  @default(0.00) @db.Decimal(19, 2)
+  HouseType          String
+  RoofModel          String
+  Ceiling1           String
+  InteriorWallFinish String
+  Property_Type      String
+}

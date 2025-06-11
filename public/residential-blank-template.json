@@ -1,0 +1,919 @@
+{
+    "rptTemplate": {
+        "name": "Residential",
+        "sections": [
+            {
+                "refNumber": "0",
+                "name": "Summary of Valuation",
+                "subSections": [
+                    {
+                        "title": "Summary",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Scope of Work",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Purpose of Valuation",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Property Description",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Relevance",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Market Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Forced Sale Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Gross Replacement Cost",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuer",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "1",
+                "name": "Scope of Work",
+                "subSections": [
+                    {
+                        "title": "Instruction",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Intent",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Interest Being Valued",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Purpose",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Basis of Value",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuation Standards",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Use",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Limitation and Liability",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Pecuniary Interest",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Condition",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Environment",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Disclaimer",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "2",
+                "name": "Property Details",
+                "subSections": [
+                    {
+                        "title": "Description",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Location",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Plot Size",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Construction",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Plinth Area",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Accommodation",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Condition and Repair",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Services",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Tenure",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "refNumber": "3",
+                "name": "Scope of Equity",
+                "subSections": [
+                    {
+                        "title": "Inspection and Valuation",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Extent of Investigations",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Nature and Source of Information",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Assumptions",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Special Assumptions",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Valuation Methodology",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Market",
+                        "ReportSubSection": [
+                            {
+                                "type": "String",
+                                "props": {
+                                    "textColor": "String",
+                                    "backgroundColor": "String",
+                                    "textAlignment": "String"
+                                },
+                                "content": [
+                                    {
+                                        "type": "String",
+                                        "text": "String",
+                                        "styles": {
+                                            "bold": "Boolean",
+                                            "italic": "Boolean"
+                                        }
+                                    }
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
