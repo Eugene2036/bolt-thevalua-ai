@@ -1,0 +1,348 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.main-header {
+    /* background-image: url('https://res.cloudinary.com/deacmcthw/image/upload/v1732176976/logos/home/valua-banner_tveava.jpg'); */
+    background-image: url('https://thevalua.com/public/images/okavango4.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* filter: grayscale(100%); Applies the grayscale filter */
+    /* Add other styling as needed */
+    /* opacity: 50%; */
+}
+
+/* app/styles/global.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, each taking equal space */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px; /* Space between grid items */
+    padding: 10px; /* Optional padding */
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  /* Add this to your CSS file */
+.mobile-hidden {
+    display: block;
+}
+
+@media (max-width: 740px) {
+    .mobile-hidden {
+        display: none;
+    }
+    .logo-margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mobile-display {
+        display: display;
+    }
+}
+
+.custom-tabview .p-tabview-nav {
+    @apply shadow-none rounded-lg;
+    @apply flex flex-row space-x-1; /* Ensure tabs are displayed horizontally */
+    @apply pb-0 bottom-0;
+    @apply border-b-stone-400 border-b;
+}
+
+.custom-tabview .p-tabview-nav-link {
+    @apply flex flex-row shadow px-6 py-3 text-slate-100 font-semibold text-sm hover:bg-gray-500 hover:text-slate-100 transition duration-300 ease-in-out rounded-lg cursor-pointer; /* Style for tab buttons with hand pointer on hover */
+}
+
+/* Default tab background color */
+.default-tab .p-tabview-nav-link {
+    @apply flex flex-row bg-teal-50 text-teal-600 hover:bg-teal-100 hover:text-stone-500 shadow; /* Apply text-teal-600 as the default background color */
+}
+
+/* Disabled tab background color */
+.disabled-tab .p-tabview-nav-link {
+    @apply bg-stone-100 text-stone-600 cursor-not-allowed shadow; 
+}
+
+/* Active tab background color */
+.active-tab .p-tabview-nav-link {
+    @apply bg-teal-600 text-white hover:bg-teal-700;
+}
+
+/* Active tab for report module */
+.active-tab-report .p-tabview-nav-link {
+    @apply flex flex-row bg-teal-600 text-white rounded-full hover:bg-teal-700;
+}
+
+/* Default tab for reports module */
+.default-tab-report .p-tabview-nav-link {
+    @apply flex flex-row bg-teal-50 text-teal-600 rounded-full hover:bg-teal-100 hover:text-stone-500 shadow; /* Apply text-teal-600 as the default background color */
+}
+
+/* Disabled tab for report module */
+.disabled-tab-report .p-tabview-nav-link {
+    @apply bg-stone-100 text-stone-600 rounded-full cursor-not-allowed shadow; 
+}
+
+.active-tab .p-tabview-nav-link .p-tabview-title {
+    @apply  text-white;
+}
+
+
+
+
+/* STYLING FOR THE CHAT COMPONENT */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .message-form textarea {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .message-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+
+  
+
+  /* ADD FADE-IN FADE-OUT TO THE POPUP FORM */
+  /* styles.css or any other CSS file */
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* Add this to your CSS file */
+.p-tabview .p-tabview-nav li.justify-content-end {
+    margin-left: auto;
+}
+
+/* If you're using PrimeReact's flex classes */
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+
+/* Telephone Field input Validation */
+.iti {
+    width: 100%;
+  }
+  
+  .iti__flag-container {
+    padding: 0 6px;
+  }
+  
+  .iti__selected-flag {
+    padding: 0 6px;
+  }
+  
+  /* Adjust the input padding to account for the flag dropdown */
+  .iti input {
+    padding-left: 52px !important;
+  }
+  
+  /* For RTL languages */
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type="tel"],
+  .iti--allow-dropdown input[type="text"],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type="tel"],
+  .iti--separate-dial-code input[type="text"] {
+    padding-right: 6px !important;
+    padding-left: 52px !important;
+    margin-left: 0;
+  }
+
+
+  /* IMPLEMENT DYNAMIC TABS COMPONENT */
+  .tabs-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+  }
+  
+  .tabs-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tab-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .tab-button.active {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    min-height: 200px;
+  }
+
+
+  /* Add styling to PDF Preview Component */
+  .pdf-preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .pdf-preview-error {
+    color: red;
+    padding: 10px;
+    border: 1px solid #ffcccc;
+    background-color: #ffeeee;
+  }
+  
+  .pdf-preview-loading {
+    color: #666;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    background-color: #f9f9f9;
+  }
+  
+  .pdf-download-link a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .pdf-download-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .valuation-report-preview {
+    margin:  0;
+    box-shadow: 0 2px 8px rgba(120, 113, 108, 0.5); /* Stone-500 from Tailwind */
+    height: 100vh;
+  }
