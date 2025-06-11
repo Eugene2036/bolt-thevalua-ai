@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.global-input {
+  width: 100%;
+  background-color: #FAFAFA !important;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.global-input:focus {
+  border-color: #3B82F6;
+}
+
+.global-input.dark {
+  background-color: #1e1e2f;
+  border-color:  #2c2c3d;
+  color: #d4d4dc;
+}
+.base-button{
+
+}

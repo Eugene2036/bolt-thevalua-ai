@@ -1,0 +1,710 @@
+{
+    "Botswana": {
+        "towns": [
+            {
+                "id": "BW-001",
+                "name": "Gaborone",
+                "neighborhoods": [
+                    {
+                        "id": "BW-001-001",
+                        "name": "Broadhurst"
+                    },
+                    {
+                        "id": "BW-001-002",
+                        "name": "Phase 1"
+                    },
+                    {
+                        "id": "BW-001-003",
+                        "name": "Phase 2"
+                    },
+                    {
+                        "id": "BW-001-004",
+                        "name": "Phase 3"
+                    },
+                    {
+                        "id": "BW-001-005",
+                        "name": "Phase 4"
+                    },
+                    {
+                        "id": "BW-001-006",
+                        "name": "Gaborone West"
+                    },
+                    {
+                        "id": "BW-001-007",
+                        "name": "Gaborone North"
+                    },
+                    {
+                        "id": "BW-001-008",
+                        "name": "Taung"
+                    },
+                    {
+                        "id": "BW-001-009",
+                        "name": "Tawana"
+                    },
+                    {
+                        "id": "BW-001-010",
+                        "name": "Block 6"
+                    },
+                    {
+                        "id": "BW-001-011",
+                        "name": "Block 7"
+                    },
+                    {
+                        "id": "BW-001-012",
+                        "name": "Block 8"
+                    },
+                    {
+                        "id": "BW-001-013",
+                        "name": "Block 9"
+                    },
+                    {
+                        "id": "BW-001-014",
+                        "name": "Block 10"
+                    },
+                    {
+                        "id": "BW-001-015",
+                        "name": "Naledi"
+                    },
+                    {
+                        "id": "BW-001-016",
+                        "name": "Block 2"
+                    },
+                    {
+                        "id": "BW-001-017",
+                        "name": "Block 3"
+                    },
+                    {
+                        "id": "BW-001-018",
+                        "name": "Block 4"
+                    },
+                    {
+                        "id": "BW-001-019",
+                        "name": "Block 5"
+                    },
+                    {
+                        "id": "BW-001-020",
+                        "name": "Bontleng"
+                    },
+                    {
+                        "id": "BW-001-021",
+                        "name": "Borakalalo"
+                    },
+                    {
+                        "id": "BW-001-022",
+                        "name": "Tshimotharo"
+                    },
+                    {
+                        "id": "BW-001-023",
+                        "name": "Boseja"
+                    },
+                    {
+                        "id": "BW-001-024",
+                        "name": "Central Business District"
+                    },
+                    {
+                        "id": "BW-001-025",
+                        "name": "Extension 1"
+                    },
+                    {
+                        "id": "BW-001-025-00",
+                        "name": "Extension 2"
+                    },
+                    {
+                        "id": "BW-001-026",
+                        "name": "Extension 10"
+                    },
+                    {
+                        "id": "BW-001-027",
+                        "name": "Extension 11"
+                    },
+                    {
+                        "id": "BW-001-028",
+                        "name": "Extension 12"
+                    },
+                    {
+                        "id": "BW-001-029",
+                        "name": "Extension 13"
+                    },
+                    {
+                        "id": "BW-001-030",
+                        "name": "Extension 14"
+                    },
+                    {
+                        "id": "BW-001-031",
+                        "name": "Extension 15"
+                    },
+                    {
+                        "id": "BW-001-032",
+                        "name": "Extension 16"
+                    },
+                    {
+                        "id": "BW-001-033",
+                        "name": "Extension 17"
+                    },
+                    {
+                        "id": "BW-001-034",
+                        "name": "Extension 18"
+                    },
+                    {
+                        "id": "BW-001-035",
+                        "name": "Extension 19"
+                    },
+                    {
+                        "id": "BW-001-036",
+                        "name": "Extension 2"
+                    },
+                    {
+                        "id": "BW-001-037",
+                        "name": "Extension 20"
+                    },
+                    {
+                        "id": "BW-001-038",
+                        "name": "Extension 21"
+                    },
+                    {
+                        "id": "BW-001-039",
+                        "name": "Extension 22"
+                    },
+                    {
+                        "id": "BW-001-040",
+                        "name": "Extension 23"
+                    },
+                    {
+                        "id": "BW-001-041",
+                        "name": "Extension 24"
+                    },
+                    {
+                        "id": "BW-001-042",
+                        "name": "Extension 25"
+                    },
+                    {
+                        "id": "BW-001-042",
+                        "name": "Extension 27"
+                    },
+                    {
+                        "id": "BW-001-043",
+                        "name": "Extension 3"
+                    },
+                    {
+                        "id": "BW-001-044",
+                        "name": "Extension 4"
+                    },
+                    {
+                        "id": "BW-001-045",
+                        "name": "Extension 5"
+                    },
+                    {
+                        "id": "BW-001-046",
+                        "name": "Extension 6"
+                    },
+                    {
+                        "id": "BW-001-047",
+                        "name": "Extension 7"
+                    },
+                    {
+                        "id": "BW-001-048",
+                        "name": "Extension 8"
+                    },
+                    {
+                        "id": "BW-001-049",
+                        "name": "Extension 9"
+                    },
+                    {
+                        "id": "BW-001-050",
+                        "name": "Gaborone South"
+                    },
+                    {
+                        "id": "BW-001-051",
+                        "name": "Gaborone Village"
+                    },
+                    {
+                        "id": "BW-001-052",
+                        "name": "Glen Valley"
+                    },
+                    {
+                        "id": "BW-001-053",
+                        "name": "Fairgrounds"
+                    },
+                    {
+                        "id": "BW-001-054",
+                        "name": "Phakalane"
+                    },
+                    {
+                        "id": "BW-001-055",
+                        "name": "Kgaphamadi"
+                    },
+                    {
+                        "id": "BW-001-056",
+                        "name": "Kgale"
+                    },
+                    {
+                        "id": "BW-001-057",
+                        "name": "Setlhoa"
+                    },
+                    {
+                        "id": "BW-001-058",
+                        "name": "Ledumadumane"
+                    },
+                    {
+                        "id": "BW-001-059",
+                        "name": "Tsholofelo"
+                    },
+                    {
+                        "id": "BW-001-060",
+                        "name": "Tshwane"
+                    },
+                    {
+                        "id": "BW-001-061",
+                        "name": "Tsholofelo North"
+                    },
+                    {
+                        "id": "BW-001-062",
+                        "name": "Tsholofelo South"
+                    },
+                    {
+                        "id": "BW-001-063",
+                        "name": "Tshwane North"
+                    },
+                    {
+                        "id": "BW-001-064",
+                        "name": "Tshwane South"
+                    },
+                    {
+                        "id": "BW-001-065",
+                        "name": "Phakalane Mowana"
+                    },
+                    {
+                        "id": "BW-001-066",
+                        "name": "Phakalane Golf Estate"
+                    },
+                    {
+                        "id": "BW-001-067",
+                        "name": "Ruretse"
+                    }
+                ]
+            },
+            {
+                "id": "BW-002",
+                "name": "Francistown",
+                "neighborhoods": [
+                    {
+                        "id": "BW-002-001",
+                        "name": "Bluetown"
+                    },
+                    {
+                        "id": "BW-002-002",
+                        "name": "Aerodrome"
+                    },
+                    {
+                        "id": "BW-002-003",
+                        "name": "Gerald Estates"
+                    },
+                    {
+                        "id": "BW-002-004",
+                        "name": "Kgaphamadi"
+                    },
+                    {
+                        "id": "BW-002-005",
+                        "name": "Riverside"
+                    },
+                    {
+                        "id": "BW-002-006",
+                        "name": "Tati"
+                    },
+                    {
+                        "id": "BW-002-007",
+                        "name": "Molapo"
+                    },
+                    {
+                        "id": "BW-002-008",
+                        "name": "Satelite"
+                    },
+                    {
+                        "id": "BW-002-009",
+                        "name": "Donga"
+                    },
+                    {
+                        "id": "BW-002-010",
+                        "name": "Minestone"
+                    },
+                    {
+                        "id": "BW-002-011",
+                        "name": "Ntshe"
+                    },
+                    {
+                        "id": "BW-002-012",
+                        "name": "Area S"
+                    },
+                    {
+                        "id": "BW-002-013",
+                        "name": "Area W"
+                    },
+                    {
+                        "id": "BW-002-014",
+                        "name": "Dumela"
+                    },
+                    {
+                        "id": "BW-002-015",
+                        "name": "Monarch"
+                    },
+                    {
+                        "id": "BW-002-016",
+                        "name": "White City"
+                    },
+                    {
+                        "id": "BW-002-017",
+                        "name": "Area L"
+                    }
+                ]
+            },
+            {
+                "id": "BW-003",
+                "name": "Molepolole",
+                "neighborhoods": [
+                    {
+                        "id": "BW-003-001",
+                        "name": "Boatlaname"
+                    },
+                    {
+                        "id": "BW-003-002",
+                        "name": "Metsimotlhaba"
+                    },
+                    {
+                        "id": "BW-003-003",
+                        "name": "Borakalalo"
+                    }
+                ]
+            },
+            {
+                "id": "BW-004",
+                "name": "Maun",
+                "neighborhoods": [
+                    {
+                        "id": "BW-004-001",
+                        "name": "Boseja"
+                    },
+                    {
+                        "id": "BW-004-002",
+                        "name": "Sedie"
+                    },
+                    {
+                        "id": "BW-004-003",
+                        "name": "Matlapaneng"
+                    }
+                ]
+            },
+            {
+                "id": "BW-005",
+                "name": "Serowe",
+                "neighborhoods": [
+                    {
+                        "id": "BW-005-001",
+                        "name": "Mokoboxane"
+                    },
+                    {
+                        "id": "BW-005-002",
+                        "name": "Mmutlane"
+                    },
+                    {
+                        "id": "BW-005-003",
+                        "name": "Radisele"
+                    }
+                ]
+            },
+            {
+                "id": "BW-006",
+                "name": "Kanye",
+                "neighborhoods": [
+                    {
+                        "id": "BW-006-001",
+                        "name": "Moshana"
+                    },
+                    {
+                        "id": "BW-006-002",
+                        "name": "Thamaga"
+                    },
+                    {
+                        "id": "BW-006-003",
+                        "name": "Mabutsane"
+                    }
+                ]
+            },
+            {
+                "id": "BW-007",
+                "name": "Mahalapye",
+                "neighborhoods": [
+                    {
+                        "id": "BW-007-001",
+                        "name": "Botlhapatlou"
+                    },
+                    {
+                        "id": "BW-007-002",
+                        "name": "Mmutle"
+                    },
+                    {
+                        "id": "BW-007-003",
+                        "name": "Sebina"
+                    }
+                ]
+            },
+            {
+                "id": "BW-008",
+                "name": "Kasane",
+                "neighborhoods": [
+                    {
+                        "id": "BW-008-001",
+                        "name": "Kazungula"
+                    },
+                    {
+                        "id": "BW-008-002",
+                        "name": "Lesoma"
+                    },
+                    {
+                        "id": "BW-008-003",
+                        "name": "Chobe"
+                    }
+                ]
+            },
+            {
+                "id": "BW-009",
+                "name": "Lobatse",
+                "neighborhoods": [
+                    {
+                        "id": "BW-009-001",
+                        "name": "Peleng"
+                    },
+                    {
+                        "id": "BW-009-002",
+                        "name": "Boatle"
+                    },
+                    {
+                        "id": "BW-009-003",
+                        "name": "Ramotswa"
+                    }
+                ]
+            },
+            {
+                "id": "BW-010",
+                "name": "Selibe Phikwe",
+                "neighborhoods": [
+                    {
+                        "id": "BW-010-001",
+                        "name": "Botshabelo"
+                    },
+                    {
+                        "id": "BW-010-002",
+                        "name": "Mmadinare"
+                    },
+                    {
+                        "id": "BW-010-003",
+                        "name": "Lerala"
+                    }
+                ]
+            },
+            {
+                "id": "BW-011",
+                "name": "Palapye",
+                "neighborhoods": [
+                    {
+                        "id": "BW-011-001",
+                        "name": "Mamorapula"
+                    },
+                    {
+                        "id": "BW-011-002",
+                        "name": "Botlhapatlou"
+                    },
+                    {
+                        "id": "BW-011-003",
+                        "name": "Morupule"
+                    },
+                    {
+                        "id": "BW-011-004",
+                        "name": "Ralekgetho"
+                    },
+                    {
+                        "id": "BW-011-005",
+                        "name": "Moremi"
+                    },
+                    {
+                        "id": "BW-011-006",
+                        "name": "Motshegaletau"
+                    },
+                    {
+                        "id": "BW-011-007",
+                        "name": "Sebina"
+                    },
+                    {
+                        "id": "BW-011-008",
+                        "name": "Lephalale"
+                    }
+                ]
+            },
+            {
+                "id": "BW-012",
+                "name": "Jwaneng",
+                "neighborhoods": [
+                    {
+                        "id": "BW-012-001",
+                        "name": "Naledi"
+                    },
+                    {
+                        "id": "BW-012-002",
+                        "name": "Bokamoso"
+                    },
+                    {
+                        "id": "BW-012-003",
+                        "name": "Letlhakane"
+                    },
+                    {
+                        "id": "BW-012-004",
+                        "name": "Jwaneng Mine Township"
+                    },
+                    {
+                        "id": "BW-012-005",
+                        "name": "Majwe"
+                    }
+                ]
+            },
+            {
+                "id": "BW-013",
+                "name": "Orapa",
+                "neighborhoods": [
+                    {
+                        "id": "BW-013-001",
+                        "name": "Letlhakane"
+                    },
+                    {
+                        "id": "BW-013-002",
+                        "name": "Damtshaa"
+                    },
+                    {
+                        "id": "BW-013-003",
+                        "name": "Orapa Town"
+                    },
+                    {
+                        "id": "BW-013-004",
+                        "name": "Mokotshana"
+                    },
+                    {
+                        "id": "BW-013-005",
+                        "name": "Letlhakane Mines"
+                    },
+                    {
+                        "id": "BW-013-006",
+                        "name": "Orapa Mine Village"
+                    }
+                ]
+            },
+            {
+                "id": "BW-014",
+                "name": "Sowa Town",
+                "neighborhoods": [
+                    {
+                        "id": "BW-014-001",
+                        "name": "Phuduhudu"
+                    },
+                    {
+                        "id": "BW-014-002",
+                        "name": "Botshabelo"
+                    },
+                    {
+                        "id": "BW-014-003",
+                        "name": "Bokaa"
+                    },
+                    {
+                        "id": "BW-014-004",
+                        "name": "Matsitama"
+                    },
+                    {
+                        "id": "BW-014-005",
+                        "name": "Mmashoro"
+                    },
+                    {
+                        "id": "BW-014-006",
+                        "name": "Orapa Mine Village"
+                    },
+                    {
+                        "id": "BW-014-007",
+                        "name": "Sowa Township"
+                    },
+                    {
+                        "id": "BW-014-008",
+                        "name": "Tswapong"
+                    },
+                    {
+                        "id": "BW-014-009",
+                        "name": "Moremi"
+                    },
+                    {
+                        "id": "BW-014-010",
+                        "name": "Dukwi"
+                    }
+                ]
+            },
+            {
+                "id": "BW-015",
+                "name": "Mogoditshane",
+                "neighborhoods": [
+                    {
+                        "id": "BW-015-001",
+                        "name": "Nkoyaphiri"
+                    },
+                    {
+                        "id": "BW-015-002",
+                        "name": "Maulana"
+                    },
+                    {
+                        "id": "BW-015-003",
+                        "name": "Sentumule"
+                    },
+                    {
+                        "id": "BW-015-004",
+                        "name": "Block 7"
+                    },
+                    {
+                        "id": "BW-015-005",
+                        "name": "Block 5"
+                    },
+                    {
+                        "id": "BW-015-006",
+                        "name": "Bontleng"
+                    },
+                    {
+                        "id": "BW-015-007",
+                        "name": "Diphakwane"
+                    },
+                    {
+                        "id": "BW-015-008",
+                        "name": "Pelele"
+                    },
+                    {
+                        "id": "BW-015-009",
+                        "name": "Lerala"
+                    },
+                    {
+                        "id": "BW-015-010",
+                        "name": "Mosakeng"
+                    }
+                ]
+            },
+            {
+                "id": "BW-016",
+                "name": "Tlokweng",
+                "neighborhoods": [
+                    {
+                        "id": "BW-016-001",
+                        "name": "Botlhapatlou"
+                    },
+                    {
+                        "id": "BW-016-002",
+                        "name": "Mmutle"
+                    },
+                    {
+                        "id": "BW-016-003",
+                        "name": "Sebina"
+                    }
+                ]
+            }
+        ]
+    }
+}
