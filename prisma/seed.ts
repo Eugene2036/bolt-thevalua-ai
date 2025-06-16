@@ -132,6 +132,17 @@ async function seed() {
     },
   });
   console.log('8');
+  const banker = await prisma.user.create({
+    data: {
+      email: 'banker@thevalua.com',
+      password: { create: { hash: hashedPassword } },
+      isVerified: true,
+      isSuper: true,
+      isBanker: true,
+      userGroupId: superadmin.id,
+    },
+  });
+  console.log('8');
 
   const propertyTypeIds: string[] = [];
   for (let identifier of PROPERTY_TYPES) {

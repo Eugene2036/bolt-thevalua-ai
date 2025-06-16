@@ -1218,13 +1218,18 @@ export default function EditInstructionPage(props: Props) {
                                     fields={('fields' in (fetcher.data ?? {}) && (fetcher.data as any).fields) ? (fetcher.data as any).fields : defaultValues}
                                     isSubmitting={isProcessing}
                                 >
-                                    <h2 className="text-lg font-bold mb-4">Reason for Decline</h2>
-                                    <TextArea
+                                    <h2 className="text-lg font-bold mb-4">Select Reason for Decline</h2>
+                                    <FormSelect
                                         name='declineReason'
-                                        label="Please provide a reason for declining this request"
-                                        value={declineReason!}
+                                        label="Reason for Declining"
+                                        value={declineReason ?? ''}
                                         onChange={(e) => setDeclineReason(e.target.value)}
-                                    />
+                                    >
+                                        {/* <option value="">Select a reason</option> */}
+                                        <option value="No Capacity">No Capacity</option>
+                                        <option value="Outside Coverage Area">Outside Coverage Area</option>
+                                        <option value="Competency Issues">Competency Issues</option>
+                                    </FormSelect>
                                     <TextField
                                         name='firstName'
                                         label=""
